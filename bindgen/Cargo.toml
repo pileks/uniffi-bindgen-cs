@@ -2,6 +2,8 @@
 name = "pileks_uniffi-bindgen-cs"
 version = "0.2.1"
 edition = "2021"
+description = "Pileks' modified uniffi-bindgen-cs package that runs using uniffi 0.23.0"
+license = "MPL-2.0"
 
 [lib]
 name = "uniffi_bindgen_cs"
