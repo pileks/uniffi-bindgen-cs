@@ -1,5 +1,5 @@
 [package]
-name = "uniffi-bindgen-cs"
+name = "pileks_uniffi-bindgen-cs"
 version = "0.2.1"
 edition = "2021"
 
