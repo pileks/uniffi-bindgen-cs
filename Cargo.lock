@@ -640,7 +640,7 @@ dependencies = [
  "camino",
  "clap",
  "trybuild",
- "uniffi_bindgen",
+ "uniffi_bindgen 0.23.0",
  "uniffi_build",
  "uniffi_core",
  "uniffi_macros",
@@ -648,7 +648,7 @@ dependencies = [
 
 [[package]]
 name = "uniffi-bindgen-cs"
-version = "0.1.0"
+version = "0.2.1"
 dependencies = [
  "anyhow",
  "askama",
@@ -661,7 +661,7 @@ dependencies = [
  "serde",
  "serde_json",
  "toml",
- "uniffi_bindgen",
+ "uniffi_bindgen 0.23.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -803,9 +803,33 @@ dependencies = [
  "serde",
  "serde_json",
  "toml",
- "uniffi_meta",
- "uniffi_testing",
- "weedle2",
+ "uniffi_meta 0.23.0",
+ "uniffi_testing 0.23.0",
+ "weedle2 4.0.0",
+]
+
+[[package]]
+name = "uniffi_bindgen"
+version = "0.23.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dbbba5103051c18f10b22f80a74439ddf7100273f217a547005d2735b2498994"
+dependencies = [
+ "anyhow",
+ "askama",
+ "bincode",
+ "camino",
+ "fs-err",
+ "glob",
+ "goblin",
+ "heck",
+ "once_cell",
+ "paste",
+ "serde",
+ "serde_json",
+ "toml",
+ "uniffi_meta 0.23.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "uniffi_testing 0.23.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "weedle2 4.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -814,12 +838,22 @@ version = "0.23.0"
 dependencies = [
  "anyhow",
  "camino",
- "uniffi_bindgen",
+ "uniffi_bindgen 0.23.0",
 ]
 
 [[package]]
 name = "uniffi_checksum_derive"
 version = "0.23.0"
+dependencies = [
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "uniffi_checksum_derive"
+version = "0.23.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "03de61393a42b4ad4984a3763c0600594ac3e57e5aaa1d05cede933958987c03"
 dependencies = [
  "quote",
  "syn",
@@ -853,7 +887,7 @@ dependencies = [
  "syn",
  "toml",
  "uniffi_build",
- "uniffi_meta",
+ "uniffi_meta 0.23.0",
 ]
 
 [[package]]
@@ -862,12 +896,38 @@ version = "0.23.0"
 dependencies = [
  "serde",
  "siphasher",
- "uniffi_checksum_derive",
+ "uniffi_checksum_derive 0.23.0",
+]
+
+[[package]]
+name = "uniffi_meta"
+version = "0.23.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "66fdab2c436aed7a6391bec64204ec33948bfed9b11b303235740771f85c4ea6"
+dependencies = [
+ "serde",
+ "siphasher",
+ "uniffi_checksum_derive 0.23.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "uniffi_testing"
 version = "0.23.0"
+dependencies = [
+ "anyhow",
+ "camino",
+ "cargo_metadata",
+ "fs-err",
+ "once_cell",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "uniffi_testing"
+version = "0.23.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "92b0570953ec41d97ce23e3b92161ac18231670a1f97523258a6d2ab76d7f76c"
 dependencies = [
  "anyhow",
  "camino",
@@ -900,6 +960,15 @@ name = "weedle2"
 version = "4.0.0"
 dependencies = [
  "fs-err",
+ "nom",
+]
+
+[[package]]
+name = "weedle2"
+version = "4.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2e79c5206e1f43a2306fd64bdb95025ee4228960f2e6c5a8b173f3caaf807741"
+dependencies = [
  "nom",
 ]
 
